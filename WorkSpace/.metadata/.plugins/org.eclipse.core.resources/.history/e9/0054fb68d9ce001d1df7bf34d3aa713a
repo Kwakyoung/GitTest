@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Text02 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String Data = sc.nextLine();
+		
+		double dNum1 = Double.parseDouble(Data);
+		int iNum1 = (int) dNum1;
+		System.out.println(iNum1);
+	}
+}

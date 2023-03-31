@@ -1,0 +1,19 @@
+package pack09_scanner;
+
+import java.util.Scanner;
+
+public class Ex02_Scanner {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in); // 기억이 안나면 복붙 (암기)
+	String inputData = sc.nextLine();
+	//---------중요x , 공부하기 위해서 어쩔수없이 외워서 쓰고있음 ----- //
+	int sum = Integer.parseInt(inputData)+ 20;
+	System.out.println(sum);
+	
+	int sum1 = Integer.parseInt(inputData);
+	System.out.println(sum1+20);
+	
+	
+		
+}
+}

@@ -1,0 +1,13 @@
+package test01_Variable;
+
+public class Kyg {
+	public static void main(String[] args) {
+		
+		byte kyg = 1;
+		int kyh = 2;
+		double kyv = 3.1;
+		
+		System.out.println(kyg);
+	}
+
+}
