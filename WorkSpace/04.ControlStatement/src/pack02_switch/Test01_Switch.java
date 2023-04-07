@@ -2,7 +2,7 @@ package pack02_switch;
 
 public class Test01_Switch {
 	public static void main(String[] args) {
-		int score = 59;
+		int score = 100;
 		// 100 : A 따로
 		// 90 ~ 99 A학점
 		// 80 ~ 89 B
@@ -12,7 +12,7 @@ public class Test01_Switch {
 		
 		
 		switch (score/10) {
-		case 100 : 
+		case 10 : 
 			System.out.println("A");
 			break;
 		case 9:
