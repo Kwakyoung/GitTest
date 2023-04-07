@@ -15,16 +15,16 @@ public class Ex01_Game {
 			a++;
 			if (random<i) {
 				System.out.println("더 작은수를 입력하세요");
-			}else {
+			}else if (random>i){
 				System.out.println("더 큰수를 입력하세요");
-			if(i == random) {
+			}else{
 				System.out.println("맞췃습니다!");
 				
 				System.out.println("시도 횟수는 : "+ a +"입니다.");
 				break;
 				
+		
 			}
-		}
 		
 	}
 

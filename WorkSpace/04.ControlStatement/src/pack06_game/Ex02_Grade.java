@@ -19,8 +19,12 @@ public class Ex02_Grade {
 					}
 					int sum = (kor+eng+mat);
 					double avg = (double)sum/3;
+					if(sum<0 || sum>300) {
+						System.out.println("다시 입력해주세요");
+					}else {
 					System.out.println("총점 :"+ (kor+eng+mat));
 					System.out.println("평균 :"+ avg);
+					}
 				}
 				
 			}
