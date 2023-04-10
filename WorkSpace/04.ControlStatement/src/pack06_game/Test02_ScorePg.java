@@ -39,7 +39,10 @@ public class Test02_ScorePg {
 		System.out.println("국어점수 : "+ kor);
 		System.out.println("영어점수 : "+ eng);
 		System.out.println("수학점수 : "+ mat);
-		
+		int sum = (kor+eng+mat);
+		double dNum = (kor+eng+mat)/3;
+		System.out.println("총합"+sum);
+		System.out.println("평균"+dNum);
 	}
 
 }
