@@ -6,11 +6,13 @@ public class Text01_ArraySum {
 		// sArr내부에는 문자열 1부터 각각의 인덱스에는 10까지 할당이 되어있다.
 		// sArr내부에 들어있는 문자열을 숫자로 바꿔서 누적합을 구하고 출력해보기
 		
-		String[] sArr = {"1","2","3","4","5","6","7","8","9","10"}; 
+		String[] sArr = new String [10]; 
+		
+		for(int j = 0; j<10; j++) {
+			sArr[j] = j+1+"";
+		}
 		
 		int i = 0;
-		Integer.parseInt(sArr[0]);
-		
 		for(int num = 0; num<10; num++) {
 			i += Integer.parseInt(sArr[num]);
 		} System.out.println(i);
