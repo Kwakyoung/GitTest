@@ -27,14 +27,18 @@ public class Test01_Game {
 		int str = Integer.parseInt(sc.nextLine());
 		int ran =new Random().nextInt(str);
 		System.out.println("난이도 : " + str);
+		System.out.println(str);
 		
+		int sum = 0;
 		for(;;) {
 		int[] array = new int[str+1];
 		System.out.println("숫자를 입력하세요. ");
 		int num = Integer.parseInt(sc.nextLine());
+		sum++;
 		array[str] = num;
 		if(ran == array[str]) {
 			System.out.println("정답");
+			System.out.println("시도한 횟수 : " + sum);
 			break;
 		}else if (ran > array[str]){
 			System.out.println("오답. 더 큼");
