@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="kyg"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="nextline()"/>
+			<item value="package pack01_if;"/>
 			<item value="kyg"/>
 			<item value="yg"/>
 			<item value="package pack01_Variable;"/>

@@ -26,7 +26,7 @@ public class Kyg {
 		System.out.println(dNum);
 		
 		
-		
+			
 	}
 
 }

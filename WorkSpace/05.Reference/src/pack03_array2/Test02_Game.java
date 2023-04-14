@@ -9,7 +9,9 @@ public class Test02_Game {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("랜덤한 숫자 맞추기 게임!");
 		System.out.println("난이도를 선택해주세요.");
+		
 		int level = Integer.parseInt(sc.nextLine());  // <= 오류가 나는 코드인지 알고있음. ( A=>예외 )
+		
 		int[] gameArray = new int[level];  
 		String[] gameResults = new String[level];  // [null] [null] ... [null]
 		for(int i = 0; i < gameResults.length; i++) {
@@ -26,6 +28,7 @@ public class Test02_Game {
 			for(int i = 0; i < gameResults.length; i++) {
 				System.out.print(i+1+"["+gameResults[i]+"] "); 
 			}System.out.println();
+			
 			int userNum = Integer.parseInt(sc.nextLine())-1; 
 			if(gameArray[userNum] == 1) {
 				System.out.println("정답!!");

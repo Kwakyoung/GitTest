@@ -1,0 +1,24 @@
+package pack03_array2;
+
+import java.util.Scanner;
+
+public class Test_mbti {
+	public static void main(String[] args) {
+		// i내향 e외향
+		// n보이는것믿음 현재중시 s상상, 직감
+		// f감성 t이성
+		// p즉흥 j계획
+		
+		Scanner sc = new Scanner(System.in);
+		int[] result = new int[4];
+		System.out.println("나는 쉬는날이면 밖에 나가 놀고싶다. 1. O || 2. X ");
+		result[0]=Integer.parseInt(sc.nextLine());
+		System.out.println("나는 좀비가 나올때를 대비해 생각해본적이 있다. 1. 0 || 2. X ");
+		result[0]=Integer.parseInt(sc.nextLine());
+		System.out.println("친구가 차 사고가 났다. 먼저 생각나는것은? / 1. 괜찮아? 다친곳없어? || 2. 보험들음?");
+		result[0]=Integer.parseInt(sc.nextLine());
+		System.out.println("나는 낯을 많이 가린다. O=1 X=2");
+		result[0]=Integer.parseInt(sc.nextLine());
+	}
+
+}

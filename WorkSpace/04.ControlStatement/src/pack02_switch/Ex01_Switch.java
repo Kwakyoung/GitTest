@@ -14,7 +14,7 @@ public class Ex01_Switch {
 		switch ( num -1  ) { // 2-1 = 1
 		  case 1:  //if ( num ==1 )
 			System.out.println("숫자 1");
-			break;// ※
+			break; // ※
 		  case 2:  // else if ( num == 2 )
 			System.out.println("숫자 2");
 			break;

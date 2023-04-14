@@ -15,18 +15,18 @@ public class Test01_TryCatch {
 		System.out.println("난이도를 선택해주세요.");
 		int level=0;
 		int[] gameArray = new int[0];
-		level = Integer.parseInt(sc.nextLine());  // <= 숫자 외에 값 입력 오류!
 		String[] gameResults = new String[0];
+		
 		while (level<2) {
 			try {
+			level = Integer.parseInt(sc.nextLine());  // <= 숫자 외에 값 입력 오류!
 			gameArray = new int[level];  
-			gameResults = new String[level];
 			}catch (Exception e) {
 				System.out.println("2이상의 숫자를 입력하세요.");
 				level = Integer.parseInt(sc.nextLine());
 			}
 		}
-		
+		gameResults = new String[level];
 		for(int i = 0; i < gameResults.length; i++) {
 			gameResults[i] = "?";
 		}

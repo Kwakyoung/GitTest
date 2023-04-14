@@ -24,5 +24,5 @@ public static void main(String[] args) {
 	a = 50; //변수 (값이 변한다) a는 10 -> 50
 	System.out.println(a);
 	System.out.println(d);
-}
+	}
 }

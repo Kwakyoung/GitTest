@@ -1,0 +1,13 @@
+package pack03_constructor;
+
+public class Test01_MemberDTO {
+	public static void main(String[] args) {
+		
+		Test01 ts = new Test01();
+		
+		System.out.println(ts.name);
+		System.out.println(ts.id);
+		System.out.println(ts.pw);
+		System.out.println(ts.age);
+	}
+}

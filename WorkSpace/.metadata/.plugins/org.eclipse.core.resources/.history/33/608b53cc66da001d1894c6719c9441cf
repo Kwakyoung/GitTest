@@ -1,0 +1,13 @@
+package pack02_field;
+
+public class Ex02_FieldMain {
+	public static void main(String[] args) {
+		// 초기값?
+		Ex02_field ef = new Ex02_field();
+		System.out.println(ef.booleanField);  // false 가 초기값
+		System.out.println(ef.charField);
+		
+		
+		
+	}
+}

@@ -1,0 +1,59 @@
+package pack02_trycatch;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ex04_TryNewCatch {
+	public static void main(String[] args) {
+		// 1부터 100까지의 누적합(sum)을 구하시오.
+		// 단, 누적합이 777 이상이 되면, 계산을 중지하고 결과를 출력해주세요.
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("랜덤한 숫자 맞추기 게임!");
+		System.out.println("난이도를 선택해주세요.");
+		int level = Integer.parseInt(sc.nextLine());  // <= 오류가 나는 코드인지 알고있음. ( A=>예외 )
+		int[] gameArray = new int[level];  
+		String[] gameResults = new String[level];  // [null] [null] ... [null]
+		for(int i = 0; i < gameResults.length; i++) {
+			gameResults[i] = "?";
+		}
+		
+		int random = new Random().nextInt(level); 
+		
+		
+		gameArray[random] = 1; // [1] [0] [0]
+		// throw : 강제로 예외를 발생시켜 catch 블럭을 실행시킨다. (throw 던지다, 넘기다)
+		try {
+			for(;;) {
+				System.out.println("1부터" + gameArray.length+ "사이 값을 입력!");
+				for(int i = 0; i < gameResults.length; i++) {
+					System.out.print(i+1+"["+gameResults[i]+"] "); 
+				}System.out.println();
+				
+				int userNum = Integer.parseInt(sc.nextLine())-1; 
+				if(gameArray[userNum] == 1) {
+					System.out.println("정답!!");
+					break;
+				}else {
+					gameResults[userNum] = "X";
+					System.out.println("오답!!");
+				}	
+				
+			}{
+					throw new Exception("누적합이 777이상이 되었다!!");
+				}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+			
+		
+			
+			
+		
+		
+		
+	}
+}

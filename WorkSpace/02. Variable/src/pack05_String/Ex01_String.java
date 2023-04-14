@@ -10,8 +10,8 @@ public class Ex01_String {
 	
 	String kyg = "아무값"; //초기화
 	System.out.println(kyg);
-	System.out.println(); //println() <- 사이에는 하나의 변수만
-	//넣을수있음 또는 변수에 담을수있는값
+	System.out.println(); // println() <- 사이에는 하나의 변수만
+	// 넣을수있음 또는 변수에 담을수있는값
 	int a = 1;
 	int b = 2;
 	System.out.println(a+b);
