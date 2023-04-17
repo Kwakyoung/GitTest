@@ -30,6 +30,9 @@ public class Ex02_Calculator {
 		System.out.println("전원을 끕니다.");
 		//main(null);
 	}
+	public static void main(String[] args) {
+		//powerOff();
+	}
 	
 	
 	// void인지 void가 아닌지에 따라 리턴타입이 결정된다.
@@ -61,9 +64,7 @@ public class Ex02_Calculator {
 	
 	
 	
-	public static void main(String[] args) {
-		//powerOff();
-	}
+	
 	
 	
 }
