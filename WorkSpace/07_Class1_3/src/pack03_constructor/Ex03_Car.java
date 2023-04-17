@@ -2,9 +2,9 @@ package pack03_constructor;
 
 public class Ex03_Car {	
 	// 필드(멤버)
-	String company; // 필수
-	String model; // 필수
-	String color; // 필수
+	String company; 
+	String model; 
+	String color; 
 	int maxSpeed;
 	int Speed;
 	

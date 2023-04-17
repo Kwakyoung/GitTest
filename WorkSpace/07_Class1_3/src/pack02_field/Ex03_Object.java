@@ -8,7 +8,7 @@ public class Ex03_Object {
 		obj = 3.14;
 		Ex03_Object eo = new Ex03_Object();
 		
-		
+		System.out.println(obj);
 		
 	}
 }
