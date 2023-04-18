@@ -1,0 +1,16 @@
+package pack03_constructor;
+
+public class Hamburger {
+	String company, menu; int price;
+	public Hamburger(String company, String menu, int price) {
+		this.company = company;
+		this.menu = menu;
+		this.price = price;
+	}
+	public static void main(String[] args) {
+		Hamburger ham = new Hamburger("맘스터치", "싸이버거", 4600원);
+		System.out.println(ham.company);
+		System.out.println(ham.menu);
+		System.out.println(ham.price);
+	}
+}

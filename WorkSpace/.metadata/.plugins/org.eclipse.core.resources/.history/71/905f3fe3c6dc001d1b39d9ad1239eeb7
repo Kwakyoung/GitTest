@@ -1,0 +1,10 @@
+package pack01_base;
+
+public class Ex03_ComputerMain {
+	public static void main(String[] args) {
+		Ex03_Computer com = new Ex03_Computer();
+		// int[] arr = ? new int[];
+	
+		System.out.println(com.sum1(new int[10]));
+	}
+}

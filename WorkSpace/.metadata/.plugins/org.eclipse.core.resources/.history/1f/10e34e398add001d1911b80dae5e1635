@@ -1,0 +1,23 @@
+package pack01_base;
+
+public class Ex06_MethodMain {
+	public static void main(String[] args) {
+		Ex06_Method em = new Ex06_Method();
+		em.sum();  // void
+		em.sum1("tastData"); // void
+		em.isMethod3();  // boolean
+		em.isMethod4(null); // boolean
+		// 메소드에 리턴타입이 주어지면 해당하는 타입의 변수라고 봐도됨.
+		// 메소드에 리턴타입이 없으면 아무타입도 아님. (실행후 없어지는 코드블럭)
+		boolean isMethod = em.isMethod3();
+		
+	
+		
+		
+		
+		
+		
+		
+		
+	}
+}
