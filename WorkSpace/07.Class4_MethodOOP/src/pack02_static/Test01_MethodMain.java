@@ -10,19 +10,20 @@ public class Test01_MethodMain {
 		// 3. 해당 결과에 따라서 로그인 되었습니다, 로그인 실패가 콘솔창에 나오게 만들어보기.
 		
 		// 4. Scanner 자체를 Test01_Method 내부에 메소드 구현을 통해서 생성받아 사용하게끔 처리
-//		System.out.println("ID를 입력해주세요. ");
-//		Test01_Method te = new Test01_Method();
-//		for(;;) {
-//			te.sc.nextLine();
-//			if(te.sc.equals(te.str1)) {
-//				System.out.println("비밀번호를 입력해주세요.");
-//				if(te.sc.equals(te.str2)) {
-//					System.out.println("로그인 되었습니다.");
-//					
-//				}
-//			}
-//			
-//		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("아이디를 입력하세요.");
+		String id = sc.nextLine();
+		System.out.println("패스워드를 입력하세요.");
+		String pw = sc.nextLine();
+		
+		Test01_Method tm = new Test01_Method();
+		if(tm.login(id, pw)) {
+			System.out.println("회원님 환영합니다. 메인컨텐츠");
+		}else {
+			System.out.println("Alert! 아이디 또는 비밀번호 확인");
+		}
+		
 		
 		
 		
