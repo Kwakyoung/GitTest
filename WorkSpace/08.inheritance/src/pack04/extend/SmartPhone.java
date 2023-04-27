@@ -22,5 +22,8 @@ public class SmartPhone extends DmbPhone{
 	public void internetOne() {
 		System.out.println("인터넷을 합니다.");
 	}
+	public void color( ) {
+		System.out.println(color);
+	}
 	
 }

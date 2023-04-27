@@ -6,6 +6,7 @@ public class ExamMainSmart {
 		sp.powerOn();     // CellPhone
 		sp.turnOnDmb();   // DmbPhone
 		sp.internetOne(); // SmartPhone
+		sp.color();
 		
 	}
 }
