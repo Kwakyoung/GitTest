@@ -48,6 +48,9 @@ public class A {
 		return data;
 	}
 	
+	// static : 메모리에 먼저 올라가있음 <- 해당타입에 . 찍으면 접근 및 사용가능
+	// instance : 메모리에 new 할때 올라감 <- 인스턴스화 한 객체에 .찍으면 접근 및 사용가능
+	
 	
 	
 }
