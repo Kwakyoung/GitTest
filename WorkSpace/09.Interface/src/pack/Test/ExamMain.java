@@ -2,10 +2,10 @@ package pack.Test;
 
 import java.util.Scanner;
 
-public class ExamMain extends DMB{
+public class ExamMain extends SmartPhone{
 	
-	public ExamMain(String color, String model, String call, String state, int channel) {
-		super(color, model, call, state, channel);
+	public ExamMain(String color, String model, String call, String state, int channel, int internet, String WebToon) {
+		super(color, model, call, state, channel, internet, WebToon);
 		
 	}
 
@@ -14,6 +14,8 @@ public class ExamMain extends DMB{
 		String select = null;
 		String voice = null;
 		CellPhone cell = new CellPhone("검정", "벽돌", "여보세요?","종료");
+		DMB dmb = new DMB("파랑", "햅틱", "여보세요", "종료", 10);
+		
 		
 		while(true) {
 		System.out.println("핸드폰 기종을 골라주세요. 1. 1세대  2. 2세대 3. 3세대");
@@ -33,6 +35,7 @@ public class ExamMain extends DMB{
 		}else if(select.equals("3")) {
 			cell.sendVoice(cell.call);
 			cell.receiveVoice(cell.call);
+			cell.hangUp();
 		}else if(select.equals("4")) {
 			break;
 		}
@@ -42,9 +45,8 @@ public class ExamMain extends DMB{
 	
 		
 		if(select.equals("2")) {
-		DMB dmb = new DMB("파랑", "아이폰3", "여보세요??", "종료", 10);
 		dmb.give();
-		
+		System.out.println("1.전원켜기 2.전원끄기 3.전화받기 4.DMB");
 		}
 		
 		

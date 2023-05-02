@@ -18,7 +18,7 @@ public class CellPhone {
 	}
 	public void give() {
 		System.out.println("---------------------------------------------------------------");
-		System.out.println("색상:"+color+"\t모델명:"+model+"\t상태:"+state+"가 지급되었습니다.");
+		System.out.println("색상:"+color+"\t모델명:"+model+"\t상태:"+state);
 		System.out.println("---------------------------------------------------------------");
 	}
 
@@ -49,8 +49,10 @@ public class CellPhone {
 		}
 	}
 	public void hangUp ( ) {
+		if(state.equals("전화중")) {
 		state="전원 켜짐";
 		System.out.println("전화를 끊습니다.");
+		}
 	}
 	
 	public int inputInt() {
