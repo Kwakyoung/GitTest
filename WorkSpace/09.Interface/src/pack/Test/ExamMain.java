@@ -18,7 +18,7 @@ public class ExamMain extends SmartPhone{
 		SmartPhone smart = new SmartPhone("그레이", "아이폰13", "여보세요", "종료", 5, 10, "웹툰","켜짐");
 	
 		while(true) {
-		System.out.println("핸드폰 기종을 골라주세요. 1. 1세대  2. 2세대 3. 3세대");
+		System.out.println("핸드폰 기종을 골라주세요. 1. 1세대\t2. 2세대\t3. 3세대\t4. 종료");
 		select = sc.nextLine();
 		
 		if(select.equals("1")) {
@@ -96,6 +96,8 @@ public class ExamMain extends SmartPhone{
 					}
 				}
 				
+		}else if(select.equals("4")){
+			break;
 		}
 				
 				
