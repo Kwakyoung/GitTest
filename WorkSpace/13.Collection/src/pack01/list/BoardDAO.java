@@ -16,7 +16,7 @@ public class BoardDAO {
 		return list;
 	}
 	
-	void getDisplay(List<BoardDTO> list) {
+	public void getDisplay(List<BoardDTO> list) {
 		for( BoardDTO dto : list ) {
 			System.out.println(dto.getiNum());
 			System.out.println(dto.getTitle());
