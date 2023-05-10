@@ -5,6 +5,7 @@ import java.util.List;
 
 import pack01.list.BoardDAO;
 import pack01.list.BoardDTO;
+import pack01.list.Ex01_List;
 import pack01_base.Ex01_Car;
 
 public class Ex01_Myjar {
