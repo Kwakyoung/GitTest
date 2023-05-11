@@ -12,7 +12,7 @@ public class SendEmail {
 	public static void main(String[] args) {
 		SendEmail send = new SendEmail();
 //		send.sendSimple();
-		send.sendHtml();
+		send.sendSimple();
 	}
 	// 1. 단순하게 텍스트만 있는 이메일 : SimpleEmail
 	// 2. 첨부파일이나 url등으로 이미지가 있는 이메일 : MultiPartEmail
@@ -31,9 +31,9 @@ public class SendEmail {
 		
 		//송신인
 		try {
-			mail.setFrom("rhkrdudrbs13@naver.com" , "한울KYG FROM");
+			mail.setFrom("rhkrdudrbs13@naver.com" , "해킹");
 			
-			mail.addTo("rhkrdudrbs13@naver.com", "한울KYG TO");  //여러개하면 여려명한테 전송
+			mail.addTo("rhkrdudrbs13@naver.com", "ㅇㅇ");  //여러개하면 여려명한테 전송
 			
 			mail.setSubject("회원가입 축하 메시지");
 			mail.setMsg("안녕");
