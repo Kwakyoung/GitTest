@@ -7,7 +7,7 @@ import org.jsoup.Jsoup;
 
 public class JsoupAPI_1 {
 	public static void main(String[] args) {
-		// https://apis.data.go.kr/B551232/OAMS_PRKPLCE_01/GET_OAMS_PRKPLCE_01?serviceKey=UkUTi2n%2BNLdNqvBJFRqgeFly1VdCmE6yItwmsTTm6UDFXP0VPZGCI7dwygVXZyTFUBktwhgGzXzEHlja575i%2BQ%3D%3D&pageNo=1&numOfRows=10&apiType=json&STATION_NAME=%EA%B8%88%EB%82%A8%EB%A1%9C4%EA%B0%80
+		// ?serviceKey=UkUTi2n%2BNLdNqvBJFRqgeFly1VdCmE6yItwmsTTm6UDFXP0VPZGCI7dwygVXZyTFUBktwhgGzXzEHlja575i%2BQ%3D%3D&pageNo=1&numOfRows=10&apiType=json&STATION_NAME=%EA%B8%88%EB%82%A8%EB%A1%9C4%EA%B0%80
 		String url ="https://apis.data.go.kr/B551232/OAMS_PRKPLCE_01/GET_OAMS_PRKPLCE_01";		
 		String doc = null;
 		try {

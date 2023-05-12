@@ -21,7 +21,7 @@ public class JsoupAPI {
 			doc = Jsoup.connect(url).data("page", "2").data("perPage", "10")
 			.data("serviceKey", "UkUTi2n+NLdNqvBJFRqgeFly1VdCmE6yItwmsTTm6UDFXP0VPZGCI7dwygVXZyTFUBktwhgGzXzEHlja575i+Q==")
 			.timeout(1000 * 10)
-			.userAgent("Chome")
+			.userAgent("Chrome")
 			.ignoreContentType(true)
 			.execute().body();
 		} catch (IOException e) {
