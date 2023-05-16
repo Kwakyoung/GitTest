@@ -23,7 +23,7 @@ public class BoardMain {
 		// 사용자가 검색한 내용을 토대로 목록을 보여주기
 //		Scanner sc = new Scanner(System.in);
 //		dao.selectList(sc.nextLine());
-//		dao.insertBoard();
+		dao.insertBoard();
 //		dao.selectList();
 		dao.selectList("titlE2");
 		

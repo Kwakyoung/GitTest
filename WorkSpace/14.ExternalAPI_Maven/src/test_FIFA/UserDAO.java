@@ -15,7 +15,8 @@ public class UserDAO {
 	ResultSet rs;
 	
 	Scanner sc = new Scanner(System.in);
-	
+	String id;
+	String playerName;
 	
 	public Connection getConn()	{
 		String url = "jdbc:oracle:thin:@211.223.59.99:1521:xe";
@@ -46,10 +47,11 @@ public class UserDAO {
 			ps = conn.prepareStatement("SELECT * FROM KOREA");
 			rs = ps.executeQuery();
 			while(rs.next()) {
-				System.out.println(rs.getInt("PLAYER_NUM")+"번 "+rs.getString("PLAYER_NAME")+ " 나이:"+rs.getInt("PLAYER_AGE")+
-						"  "+rs.getString("HEIGHT")+"  "+rs.getString("MAIN_FOOT")+"  "+rs.getString("POSITION"));
+				System.out.println(rs.getString("PLAYER_NAME")+ " 나이:"+rs.getInt("PLAYER_AGE")+
+						"  "+rs.getString("HEIGHT")+"  "+rs.getString("MAIN_FOOT")+"  "+rs.getString("POSITION")+" "+rs.getInt("PLAYER_NUM")+"번");
 				
 			}
+			
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -79,10 +81,9 @@ public class UserDAO {
 	}
 	
 	public boolean selectLogin() {
-		
 		while(true) {
 		System.out.println("ID 입력\n▼ ");
-		String id = sc.nextLine();
+		id = sc.nextLine();
 		System.out.println("PW 입력\n▼ ");
 		String pw = sc.nextLine();
 		try {
@@ -117,13 +118,78 @@ public class UserDAO {
 	}
 	
 	
-	public void insertPlayer() {
+	public void mylist()	{
+		conn = getConn();
+		try {
+			ps = conn.prepareStatement("SELECT PLAYER_NAME FROM FIFAMYMEMBER WHERE MEMBER_ID = '"+id+"'");
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				System.out.println(rs.getString("PLAYER_NAME"));
+			}
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		dbClose();
+	}
+	
+	public void myBP() {
+		conn = getConn();
+		
+		try {
+			ps = conn.prepareStatement("SELECT BP FROM FIFAMYMEMBER WHERE MEMBER_ID = '"+id+"'");
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				System.out.println(rs.getString("BP"));
+			
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void buyPlayer() {
+		conn = getConn();
+		try {
+			System.out.println("\n구매할 선수의 이름 입력바람");
+			playerName = sc.nextLine();
+			ps = conn.prepareStatement("INSERT INTO FIFAMYMEMBER (MEMBER_ID, PLAYER_NAME) "
+					+ "VALUES (?, ?)");
+			ps.setString(1, id);
+			ps.setString(2, playerName);
+			rs=ps.executeQuery();
+			System.out.println(playerName+" 선수 구매가 되었습니다.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+			
 		
 	}
-	public void deletePlayer() {
-		
+	
+	
+	public void sellPlayer() {
+		conn = getConn();
+		try {
+			System.out.println("\n판매할 선수의 이름 입력바람");
+			playerName = sc.nextLine();
+			ps = conn.prepareStatement("DELETE FROM FIFAMYMEMBER WHERE PLAYER_NAME = ? ");
+			ps.setString(1,playerName);
+			rs=ps.executeQuery();
+			System.out.println(playerName+" 선수 판매가 되었습니다.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 	
+	public void plusBP() {
+//		conn = getConn();
+//
+//		try {
+//			ps = conn.prepareStatement("UPDATE FIFAMYMEMBER SET BP = ''");
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	
@@ -131,7 +197,6 @@ public class UserDAO {
 	
 	
 	
-	
-	
+}
 	
 
