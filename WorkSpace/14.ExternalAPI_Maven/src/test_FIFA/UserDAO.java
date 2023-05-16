@@ -137,10 +137,10 @@ public class UserDAO {
 		conn = getConn();
 		
 		try {
-			ps = conn.prepareStatement("SELECT BP FROM FIFAMYMEMBER WHERE MEMBER_ID = '"+id+"'");
+			ps = conn.prepareStatement("SELECT MEMBER_BP FROM FIFAMEMBER WHERE MEMBER_ID = '"+id+"'");
 			rs = ps.executeQuery();
 			while(rs.next()) {
-				System.out.println(rs.getString("BP"));
+				System.out.println(rs.getString("MEMBER_BP"));
 			
 			}
 		} catch (SQLException e) {
@@ -183,13 +183,13 @@ public class UserDAO {
 	}
 	
 	public void plusBP() {
-//		conn = getConn();
-//
-//		try {
-//			ps = conn.prepareStatement("UPDATE FIFAMYMEMBER SET BP = ''");
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
+	    conn = getConn();
+	    try {
+	        ps = conn.prepareStatement("UPDATE FIFAMYMEMBER SET BP = CONCAT(BP, ?)");
+	        ps.executeQuery();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
 	}
 	
 	
