@@ -14,6 +14,11 @@ public class Ex02_While {
 		System.out.println(result);
 		
 		
+		int a = 0;
+		for(int j = 0; j<=10; j++) {
+			a+=j;
+			
+		}System.out.println(a);
 			
 		}
 

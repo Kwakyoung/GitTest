@@ -16,7 +16,8 @@ public class Test02_While {
 			}System.out.println();
 			i++;
 			
-		}
+		}		
+			
 		
 		Scanner sc = new Scanner(System.in);
 		int k = Integer.parseInt((sc.nextLine()));

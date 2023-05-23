@@ -1,5 +1,7 @@
 package pack01_if;
 
+import java.util.Scanner;
+
 public class TestIF {
 	public static void main(String[] args) {
 		// 1. int형 변수 code를 만든다. code의 값이 1이면 '남자' 2이면 '여자' 3이면 '남자' 4이면 '여자' 그외값은 '오류'가 출력되게
@@ -8,8 +10,9 @@ public class TestIF {
 		// 조건문을 이용해서 random의 숫자가 몇인지 출력하기.
 		// 조건문을 꼭 이용해서 6개의 조건을 만들기.
 		// ex) random(1) : 1이 출력이 되었습니다 .... ~6 까지
+		Scanner sc = new Scanner(System.in);
 		
-		int code = 1;
+		int code = Integer.parseInt(sc.nextLine());
 		 if(code == 1 || code == 3) {
 			 System.out.println("남자");
 		}else if (code ==2 || code == 4){

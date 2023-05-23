@@ -28,6 +28,9 @@ public class Ex01_While {
 			
 		}
 		
+		for(int u = 1; u<50; u+=2) {
+			System.out.println(u);
+		}
 		
 	}
 
